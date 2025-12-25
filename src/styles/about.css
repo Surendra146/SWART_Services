@@ -1,0 +1,79 @@
+/* Global container */
+.about.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  color: #1f2937; /* Dark gray */
+  background-color: #f9fafb;
+}
+
+/* Main heading */
+.about h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #0f172a; /* Dark navy */
+}
+
+/* Each section card */
+.about-section {
+  background-color: #ffffff;
+  padding: 28px 32px;
+  margin-bottom: 24px;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect (enterprise subtle) */
+.about-section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Section headings */
+.about-section h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #0284c7; /* Corporate blue */
+  position: relative;
+}
+
+/* Underline accent */
+.about-section h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #0284c7;
+  margin-top: 6px;
+  border-radius: 2px;
+}
+
+/* Paragraph text */
+.about-section p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #374151;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about h1 {
+    font-size: 28px;
+  }
+
+  .about-section {
+    padding: 22px;
+  }
+
+  .about-section h2 {
+    font-size: 20px;
+  }
+
+  .about-section p {
+    font-size: 15px;
+  }
+}
