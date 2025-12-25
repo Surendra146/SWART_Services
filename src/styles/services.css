@@ -1,0 +1,49 @@
+/* =========================
+   Global Container
+========================= */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  color: #1f2933;
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #0f172a;
+}
+
+/* =========================
+   Service Buttons Section
+========================= */
+.section-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.section-btn div {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.section-btn a {
+  text-decoration: none;
+}
+
+.btn {
+  min-width: 220px;
+  padding: 18px 22px;
+  background: linear-gradient(135deg, #0ea5e9, #0284c7);
+  border: none;
+  border-radius: 14px;
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(14, 165, 233, 0.25);
+  transition: all 0.3s ease;
+}

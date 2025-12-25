@@ -1,8 +1,9 @@
-import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import Signup from "./Signup";
 import "./../styles/home.css";
 
 const Home = () => {
-  const nag = useNavigate();
+const [showSignup, setShowSignup] = useState(false);
   return (
     <div className="container">
 
@@ -16,7 +17,8 @@ const Home = () => {
             SWART provides reliable, affordable, and certified home appliance
             repair services across your city.
           </p>
-          <button className="primary-btn" onClick={()=>nag('/Signup')}>Book Service</button>
+          <button className="primary-btn" onClick={() => setShowSignup(true)}>Book Service</button>
+        
         </div>
 
         <div className="hero-image">
@@ -56,7 +58,12 @@ const Home = () => {
         <button className="secondary-btn">Call Now</button>
       </section>
 
+
+      {showSignup && (
+        <Signup onClose={() => setShowSignup(false)} />
+      )}
     </div>
+    
   );
 };
 
