@@ -1,6 +1,8 @@
 import "./../styles/Signup.css";
+import { useNavigate } from "react-router-dom";
 
 function Signup({ onClose }) {
+  const nav= useNavigate();
   return (
     <div className="signup-overlay" onClick={onClose}>
       <div
@@ -14,7 +16,7 @@ function Signup({ onClose }) {
 
         <h2 className="title">Create Your Account</h2>
         <p className="subtitle">
-          Join SK Services and get started today
+          Join SWART Services and get started today
         </p>
 <div className="contact-form">
         <form>
@@ -26,7 +28,7 @@ function Signup({ onClose }) {
            <input type="email" placeholder="Your Email" />
           <label>password:</label>
            <input type="password" placeholder="password" />
-          <button type="submit">Signup</button>
+          <button onClick={()=>nav("/Services")}>Signup</button>
         </form>
         </div>
       </div>

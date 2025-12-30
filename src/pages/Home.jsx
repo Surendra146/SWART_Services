@@ -10,9 +10,12 @@ const [showSignup, setShowSignup] = useState(false);
       {/* HERO SECTION */}
       <section className="banner">
         <div className="text">
-          <h1>
-            Professional Washing Machine <span>Repair Services</span>
-          </h1>
+          <h2 className="hero-title">
+            Professional Washing Machine Repair Services
+          </h2>
+          <p>
+            SWART is SMART CHOICE for HOME appliance.
+          </p>
           <p>
             SWART provides reliable, affordable, and certified home appliance
             repair services across your city.

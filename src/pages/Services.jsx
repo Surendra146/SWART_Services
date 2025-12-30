@@ -2,7 +2,7 @@ import "./../styles/services.css";
 
 const Services = () => {
   return (
-<div className="container">
+<div className="sercontainer">
   <h1>Our Services</h1>
     <section class ="section-btn">
       <div>
@@ -11,8 +11,8 @@ const Services = () => {
       <a href="#ref"><button className="btn"><h2> Refrigerator  </h2></button></a> 
       </div>
     </section>
-
-     <div class="wms">
+     <section id="wms">
+     <div>
      <h2>Washing Machine Services</h2>
      <p>Repairs are available for all major brands, including LG, Samsung, and Whirlpool.</p> 
       <ul>
@@ -21,8 +21,10 @@ const Services = () => {
         <li><strong>Parts Replacement:</strong> Examples include drain pipes (₹200), capacitors (₹400), and wash motors (~₹1,500).</li> 
       </ul>
       </div>
+      </section>
 
-      <div className="ac">
+      <section id="ac">
+      <div>
        <h2>Air Conditioner (AC) Services</h2>
        <p>Professional AC maintenance is recommended every 3–6 months for optimal efficiency. 
          </p><br></br>
@@ -33,9 +35,11 @@ const Services = () => {
         <li><strong>Installation:</strong> Rates for 2025 are approximately ₹800 to ₹1,800 for window ACs and ₹1,500 to ₹3,500 for split units. </li>
        </ul>
        </div>
+       </section>
 
-        <div className="ref">
-       <h2>Air Conditioner (AC) Services</h2>
+        <section id="ref">
+        <div>
+       <h2> Refrigerator Services</h2>
        <p>Professional AC maintenance is recommended every 3–6 months for optimal efficiency. 
          </p><br></br>
        <ul>
@@ -44,8 +48,8 @@ const Services = () => {
         <li><strong>Gas Refilling:</strong> Depending on the gas type (e.g., R32, R410A) and AC tonnage, charges range from ₹1,999 to ₹5,000.</li>
         <li><strong>Installation:</strong> Rates for 2025 are approximately ₹800 to ₹1,800 for window ACs and ₹1,500 to ₹3,500 for split units. </li>
        </ul>
-
-     </div>
+      </div>
+     </section>
     </div>
   );
 };

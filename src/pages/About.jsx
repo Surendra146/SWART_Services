@@ -2,7 +2,7 @@ import "./../styles/about.css";
 
 const About = () => {
   return (
-    <div className="about container">
+    <div className="aboutcontainer">
       <h1>About SWART Services</h1>
 
       <section className="about-section">

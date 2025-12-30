@@ -1,5 +1,5 @@
 /* Global container */
-.about.container {
+.aboutcontainer {
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
@@ -9,12 +9,12 @@
 }
 
 /* Main heading */
-.about h1 {
+.aboutcontainer h1 {
   text-align: center;
   font-size: 36px;
   font-weight: 600;
   margin-bottom: 40px;
-  color: #0f172a; /* Dark navy */
+  color: #e94206; /* Dark navy */
 }
 
 /* Each section card */
@@ -61,7 +61,7 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .about h1 {
+  .aboutcontainer h1 {
     font-size: 28px;
   }
 
