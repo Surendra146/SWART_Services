@@ -2,6 +2,8 @@ import { useState } from "react";
 import Signup from "./Signup";
 import "./../styles/home.css";
 
+
+
 const Home = () => {
 const [showSignup, setShowSignup] = useState(false);
   return (
@@ -14,7 +16,7 @@ const [showSignup, setShowSignup] = useState(false);
             Professional Washing Machine Repair Services
           </h2>
           <p>
-            SWART is SMART CHOICE for HOME appliance.
+            SWART is SMART CHOICE for HOME APPLIANCE.
           </p>
           <p>
             SWART provides reliable, affordable, and certified home appliance
