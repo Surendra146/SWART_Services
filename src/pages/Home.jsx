@@ -1,4 +1,5 @@
 import { useState } from "react"; 
+import Signup from "./Signup";
 import "./../styles/home.css"; 
 
 const Home = () => { const [showSignup, setShowSignup] = useState(false); 
@@ -9,7 +10,8 @@ const Home = () => { const [showSignup, setShowSignup] = useState(false);
     <h2 className="hero-title"> Professional Washing Machine Repair Services </h2> 
     <p> SWART is SMART CHOICE for HOME APPLIANCE. </p> 
     <p> SWART provides reliable, affordable, and certified home appliance repair services across your city. </p> 
-    <button className="primary-btn" onClick={() => setShowSignup()}>Book Service</button> 
+    <button className="primary-btn" onClick={() => setShowSignup(true)}>Book Service</button> 
+       {showSignup && ( <Signup onClose={() => setShowSignup(false)} /> )}
     </div> 
     <div className="hero-image"> 
     <img src="/washing.jpg" alt="Washing Machine Service" /> 
@@ -40,7 +42,7 @@ const Home = () => { const [showSignup, setShowSignup] = useState(false);
     <button className="secondary-btn">Call Now</button> 
     </section> 
 
-    {showSignup && ( <Signup onClose={() => setShowSignup(false)} /> )} 
+  
     </div> 
     ); 
   }; 
