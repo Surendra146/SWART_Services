@@ -4,10 +4,6 @@ import "./index.css";
 import App from "./App.jsx";
 import { BrowserRouter } from "react-router-dom";
 
-import "./styles/Signup.css";
-import "./styles/About.css";
-import "./styles/Contact.css";
-
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

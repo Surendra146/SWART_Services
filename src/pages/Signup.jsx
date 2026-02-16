@@ -21,13 +21,13 @@ function Signup({ onClose }) {
 <div className="contact-form">
         <form>
           <label>Name:</label>
-           <input type="text" placeholder="Your Name" />
+           <input type="text" placeholder="Your Name" required/>
           <label>Phone Number:</label>
-           <input type="phone number" placeholder="Your phone" />
+           <input type="tel" placeholder="Your phone" required/>
           <label>Email:</label>
-           <input type="email" placeholder="Your Email" />
+           <input type="email" placeholder="Your Email" required/>
           <label>password:</label>
-           <input type="password" placeholder="password" />
+           <input type="password" placeholder="password" required />
           <button onClick={()=>nav("/Services")}>Signup</button>
         </form>
         </div>
