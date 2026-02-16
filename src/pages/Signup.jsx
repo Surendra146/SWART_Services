@@ -1,4 +1,4 @@
-import "./../styles/Signup.css";
+import "./../styles/signup.css";
 import { useNavigate } from "react-router-dom";
 
 function Signup({ onClose }) {

@@ -1,5 +1,4 @@
 import { useState } from "react"; 
-import Signup from "./Signup"; 
 import "./../styles/home.css"; 
 
 const Home = () => { const [showSignup, setShowSignup] = useState(false); 
