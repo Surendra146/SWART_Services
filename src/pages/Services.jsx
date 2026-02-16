@@ -4,7 +4,7 @@ const Services = () => {
   return (
 <div className="sercontainer">
   <h1>Our Services</h1>
-    <section class ="section-btn">
+    <section className ="section-btn">
       <div>
       <a href="#wms"><button className="btn"><h2> washing Machine </h2></button> </a>
       <a href="#ac"><button className="btn"><h2> AC </h2></button></a> 
